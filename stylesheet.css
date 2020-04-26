@@ -328,3 +328,9 @@ nav a:hover, nav a:active {
 nav a#pull {
  display: none;
 }
+
+/* taufik */
+.lesson-icon img{
+ width:100px;
+  height:100px
+}
