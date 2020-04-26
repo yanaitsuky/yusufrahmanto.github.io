@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progate</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">
+          	<span>J40</span>
+          </div>
+      <!--   <h1 style="color: white"> J40</h1> -->
+        </div>
+        <!-- Tambahkan ikon menu disini -->
+        <nav class="clearfix">
+        <a href="#" id="pull"><i class="fa fa-bars menu-icon"></i></a>
+        <ul class="clearfix">
+
+            <li><a href="#kontak">Tentang J40</a></li>
+            <li><a href="#profil">Profil</a></li>
+           
+             <li><a href="#beranda">Beranda</a></li>
+        </ul>
+ 
+    </nav>
+    </header>
+     <div class="top-wrapper" id="beranda">
+      <div class="container">
+        <h1>Yuk Belajar Coding</h1>
+      
+        <div class="btn-wrapper">
+          <a href="https://progate.com/" class="btn signup">Menuju Progate</a>
+         <!--  <p>atau</p> -->
+         <!--  <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
+          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper" id="profil">
+      <div class="container">
+        <div class="heading">
+          <h2>Profile Team J40</h2>
+          <hr>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/ucup.jpg">
+               <p>Yusuf Rahmanto</p>
+            </div>
+             <p class="text-contents">Nama Saya Yusuf Rahmanto, Umur saya 22 Tahun, Saya ingin mengucapkan terimakasih kepada digitalenta kominfo & Progate yang telah memberikan pelatihan online, Tujuan saya mengikuti pelatihan ini agar bisa menjadi web developer  </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/user.png">
+              <p>Name</p>
+            </div>
+            <p class="text-contents">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamc.</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/user.png">
+              <p>Name</p>
+            </div>
+            <p class="text-contents">o laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="img/user.png">
+              <p>Name</p>
+            </div>
+            <p class="text-contents">o laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper" id="kontak">
+      <div class="container">
+        <div class="heading">
+        	<h2>Tentang  J40 </h2>
+          <hr>
+          <span> J40 adalah kelompok terakhir dalam kelas J,yaitu untuk mengikuti challange  membuat webiste statis secara kelompok,
+
+          	akan tetapi , di kelompok ini saya masih sendiri ,di karenakan saya telat daftar dalam memilih kelompok,ayo saya tunggu teman-teman yang lainya untuk bergabung agar bisa sharing-sharing,berbagi ilmu dan supaya saya tidak sendirian juga di kelompok ini hahaha :D
+
+          </span>
+        </div>
+        <a href="https://progate.com/" class="btn message">Mulai Belajar</a>
+      </div>
+    </div>
+  <footer>
+      <div class="container">
+        <img src="img/123.png">
+        <p>copyright j40 &copy; 2020.</p>
+      </div>
+      	<div class="row">
+      		
+      		<input type="text" name=""  class="form-control" placeholder="Masukan Nama" required="">
+      		<br>
+      	
+      		<input type="text" name="" class="form-control" placeholder="Masukan Email" required="">
+      		<br>
+      		<textarea class="form-control" placeholder="Note" required=""></textarea>
+      		<br>
+
+      		<button class="btn signup"> Send</button>
+      	
+      		
+
+      	</div>
+
+    </footer>
+  </body>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+<script>
+$(function() {
+ var pull    = $('#pull'); // Variabel tombol navigasi (akan muncul hanya pada perangkat mobile)
+ menu    = $('nav ul'); // Variabel menu
+ 
+ $(pull).on('click', function(e) {
+   e.preventDefault();
+   menu.slideToggle();
+ });
+        $(window).resize(function(){
+         var w = $(window).width();
+          if(w > 600 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+         }
+     });
+});
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</html>
+
